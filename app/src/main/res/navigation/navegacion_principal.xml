@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_principal"
+    app:startDestination="@id/principal">
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.example.digidex_20.principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principal_to_mensaje"
+            app:destination="@id/mensaje" />
+        <action
+            android:id="@+id/action_principal_to_creditos"
+            app:destination="@id/creditos" />
+    </fragment>
+    <fragment
+        android:id="@+id/mensaje"
+        android:name="com.example.digidex_20.mensaje"
+        android:label="fragment_mensaje"
+        tools:layout="@layout/fragment_mensaje" >
+        <action
+            android:id="@+id/action_mensaje_to_principal"
+            app:destination="@id/principal" />
+        <action
+            android:id="@+id/action_mensaje_to_informacion"
+            app:destination="@id/informacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditos"
+        android:name="com.example.digidex_20.creditos"
+        android:label="fragment_creditos"
+        tools:layout="@layout/fragment_creditos" >
+        <action
+            android:id="@+id/action_creditos_to_principal"
+            app:destination="@id/principal" />
+    </fragment>
+    <fragment
+        android:id="@+id/informacion"
+        android:name="com.example.digidex_20.informacion"
+        android:label="fragment_informacion"
+        tools:layout="@layout/fragment_informacion" >
+        <action
+            android:id="@+id/action_informacion_to_principal"
+            app:destination="@id/principal" />
+    </fragment>
+</navigation>
