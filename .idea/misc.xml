@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/drawable/boton.xml" value="0.1945" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/fragment_creditos.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/fragment_informacion.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/fragment_mensaje.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/fragment_principal.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/vista_propia.xml" value="0.5" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Digidex_202/app/src/main/res/layout/vista_propia.xml" value="0.33" />
       </map>
     </option>
   </component>

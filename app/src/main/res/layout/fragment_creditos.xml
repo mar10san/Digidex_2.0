@@ -8,20 +8,33 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#A9BFC7F4">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_url="REPLACE_JSON_URL" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="296dp"
+            android:layout_marginTop="368dp"
             android:fontFamily="@font/acme"
             android:gravity="center"
-            android:text="Proyecto desarrollado por:\n Marco Antonio Sanchez Diaz\nJorge Antonio Aldana Carrillo"
+            android:text="Proyecto desarrollado por:\n\n Marco Antonio Sanchez Diaz\nJorge Antonio Aldana Carrillo"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,12 +42,13 @@
             android:id="@+id/btn_ir_pricipal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/boton"
             android:text="Salir"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.1" />
+            app:layout_constraintVertical_bias="0.17" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

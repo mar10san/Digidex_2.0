@@ -7,15 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.airbnb.lottie.LottieAnimationView
 
 class mensaje : Fragment() {
     lateinit var boton1: Button
     lateinit var boton2: Button
+    lateinit var animView: LottieAnimationView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val vista = inflater.inflate(R.layout.fragment_mensaje, container, false)
+        animView = vista.findViewById(R.id.animationView)
+        animView.setAnimation(R.raw.internet)
         boton1 = vista.findViewById(R.id.btn_it_informacion)
         boton1.setOnClickListener {
             findNavController().navigate(R.id.action_mensaje_to_informacion)
