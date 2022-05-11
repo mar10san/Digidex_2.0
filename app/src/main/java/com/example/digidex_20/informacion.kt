@@ -1,5 +1,6 @@
 package com.example.digidex_20
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -21,10 +22,13 @@ class informacion : Fragment() {
     lateinit var miRecycler:RecyclerView
     lateinit var listaPersonajes:ArrayList<Personaje>
     lateinit var adaptador:PersonajeAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(requireContext(), R.raw.audio)
+        mediaPlayer?.start() // no need to call prepare(); create() does that for you
         val vista = inflater.inflate(R.layout.fragment_informacion, container, false)
         listaPersonajes = ArrayList<Personaje>()
         miRecycler = vista.findViewById(R.id.RecyclerPersonajes)
