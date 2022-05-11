@@ -11,13 +11,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#85759FB3">
+        android:background="#BA628DD3">
 
         <Button
             android:id="@+id/btn_ir_mensaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="392dp"
+            android:layout_marginTop="352dp"
             android:background="@drawable/boton"
             android:backgroundTint="#2979FF"
             android:shadowColor="#A8A8A8"
@@ -35,6 +35,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/boton"
             android:text="Creditos"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,9 +52,42 @@
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16"
+            app:layout_constraintVertical_bias="0.003"
             app:srcCompat="@drawable/digimon_removebg_preview"
             tools:srcCompat="@drawable/digimon_removebg_preview" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boogaloo"
+            android:text="Descubre las criaturas del mundo Digimon"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ir_creditos"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boogaloo"
+            android:text="y la información mas relevante de estas."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ir_creditos"
+            app:layout_constraintVertical_bias="0.246" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

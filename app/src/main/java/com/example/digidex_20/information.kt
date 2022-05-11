@@ -1,8 +1,9 @@
+@file:Suppress("ClassName")
+
 package com.example.digidex_20
 
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.os.PowerManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,19 +16,21 @@ import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import com.example.digidex_20.adaptador.PersonajeAdapter
 import com.example.digidex_20.modelo.Personaje
+import android.annotation.SuppressLint as SuppressLint1
 
-class informacion : Fragment() {
-    lateinit var miRecycler:RecyclerView
-    lateinit var listaPersonajes:ArrayList<Personaje>
-    lateinit var adaptador:PersonajeAdapter
-    lateinit var mediaPlayer:MediaPlayer
+
+class information : Fragment() {
+    private lateinit var miRecycler:RecyclerView
+    private lateinit var listaPersonajes:ArrayList<Personaje>
+    private lateinit var adaptador:PersonajeAdapter
+    private lateinit var mediaPlayer:MediaPlayer
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val vista = inflater.inflate(R.layout.fragment_informacion, container, false)
         reproduceMusica()
-        listaPersonajes = ArrayList<Personaje>()
+        listaPersonajes = ArrayList()
         miRecycler = vista.findViewById(R.id.RecyclerPersonajes)
         adaptador = PersonajeAdapter(listaPersonajes)
         miRecycler.adapter = adaptador
@@ -35,14 +38,14 @@ class informacion : Fragment() {
         miRecycler.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
         return vista
     }
+    @SuppressLint1("NotifyDataSetChanged")
     fun getPersonajes(){
         val queue = Volley.newRequestQueue(requireContext())
         val url = "https://digimon-api.vercel.app/api/digimon"
-
         val objectRequest = JsonArrayRequest(
             Request.Method.GET,url,null,
             { respuesta ->
-                for (indice in 0..respuesta.length()-1){
+                for (indice in 0 until respuesta.length()){
                     val personajeIndJson = respuesta.getJSONObject(indice)
                     val personaje = Personaje(  personajeIndJson.getString("name"),
                                                 personajeIndJson.getString("img"),
@@ -64,7 +67,7 @@ class informacion : Fragment() {
         mediaPlayer.release()
     }
 
-    fun reproduceMusica(){
+    private fun reproduceMusica(){
         mediaPlayer = MediaPlayer.create(requireContext(),R.raw.audio)
         mediaPlayer.isLooping = true
         mediaPlayer.setVolume(15.0f,15.0f)

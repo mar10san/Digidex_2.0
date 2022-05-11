@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#A9BFC7F4">
+        android:background="#D4DFDC">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animationView"
@@ -31,6 +31,7 @@
             android:fontFamily="@font/acme"
             android:gravity="center"
             android:text="Proyecto desarrollado por:\n\n Marco Antonio Sanchez Diaz\nJorge Antonio Aldana Carrillo"
+            android:textColor="#000000"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/boton"
             android:text="Salir"
+            android:textColor="#FFFFFF"
+            app:iconTint="#753636"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

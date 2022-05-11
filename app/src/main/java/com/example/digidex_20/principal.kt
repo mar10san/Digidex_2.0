@@ -1,3 +1,5 @@
+@file:Suppress("ClassName")
+
 package com.example.digidex_20
 
 import android.os.Bundle
@@ -10,8 +12,8 @@ import androidx.navigation.fragment.findNavController
 
 
 class principal : Fragment() {
-    lateinit var boton1:Button
-    lateinit var boton2:Button
+    private lateinit var boton1:Button
+    private lateinit var boton2:Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -1,18 +1,21 @@
+@file:Suppress("ClassName")
+
 package com.example.digidex_20
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 
+
 class mensaje : Fragment() {
-    lateinit var boton1: Button
-    lateinit var boton2: Button
-    lateinit var animView: LottieAnimationView
+    private lateinit var boton1: Button
+    private lateinit var boton2: Button
+    private lateinit var animView: LottieAnimationView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,5 +34,4 @@ class mensaje : Fragment() {
         }
         return vista
     }
-
 }

@@ -1,3 +1,5 @@
+@file:Suppress("ClassName")
+
 package com.example.digidex_20
 
 import android.os.Bundle
@@ -10,8 +12,8 @@ import androidx.navigation.fragment.findNavController
 import com.airbnb.lottie.LottieAnimationView
 
 class creditos : Fragment() {
-    lateinit var boton1: Button
-    lateinit var animView: LottieAnimationView
+    private lateinit var boton1: Button
+    private lateinit var animView: LottieAnimationView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

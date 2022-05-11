@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BAD7E1">
+        android:background="#D4DFDC">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animationView"
@@ -36,7 +36,8 @@
             android:layout_marginTop="340dp"
             android:fontFamily="@font/architects_daughter"
             android:gravity="center"
-            android:text="Recopilando informción:\n-Nombre\n-Nivel\n-Imagen"
+            android:text="Recopilando información:\n-Nombre\n-Nivel\n-Imagen"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +53,7 @@
             android:background="@drawable/boton"
             android:backgroundTint="#2979FF"
             android:text="Continuar"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +65,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/boton"
             android:text="Regresar"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

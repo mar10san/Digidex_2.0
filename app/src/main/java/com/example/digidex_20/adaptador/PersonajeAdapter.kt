@@ -10,7 +10,7 @@ import com.example.digidex_20.R
 import com.example.digidex_20.modelo.Personaje
 import com.squareup.picasso.Picasso
 
-class PersonajeAdapter(val listaPersonajes:ArrayList<Personaje>): RecyclerView.Adapter<PersonajeAdapter.ViewHolder>(){
+class PersonajeAdapter(private val listaPersonajes:ArrayList<Personaje>): RecyclerView.Adapter<PersonajeAdapter.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -31,14 +31,9 @@ class PersonajeAdapter(val listaPersonajes:ArrayList<Personaje>): RecyclerView.A
     }
 
     class ViewHolder(vista:View):RecyclerView.ViewHolder(vista){
-        val tvNombre:TextView
-        val ivFoto:ImageView
-        val tvNivel:TextView
+        val tvNombre:TextView = vista.findViewById(R.id.tvNombreP)
+        val ivFoto:ImageView = vista.findViewById(R.id.imaPersonaje)
+        val tvNivel:TextView = vista.findViewById(R.id.tvLevel)
 
-        init {
-            tvNombre = vista.findViewById(R.id.tvNombreP)
-            ivFoto = vista.findViewById(R.id.imaPersonaje)
-            tvNivel = vista.findViewById(R.id.tvLevel)
-        }
     }
 }

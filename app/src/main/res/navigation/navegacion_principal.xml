@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/informacion"
-        android:name="com.example.digidex_20.informacion"
+        android:name="com.example.digidex_20.information"
         android:label="fragment_informacion"
         tools:layout="@layout/fragment_informacion" >
         <action
