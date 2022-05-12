@@ -36,7 +36,7 @@
             android:layout_marginTop="340dp"
             android:fontFamily="@font/architects_daughter"
             android:gravity="center"
-            android:text="Recopilando información:\n-Nombre\n-Nivel\n-Imagen"
+            android:text="Recopilando información sobre:\n-Nombre\n-Nivel\n-Imagen"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
