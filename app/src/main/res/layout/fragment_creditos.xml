@@ -30,7 +30,7 @@
             android:layout_marginTop="368dp"
             android:fontFamily="@font/acme"
             android:gravity="center"
-            android:text="Proyecto desarrollado por:\n\n Marco Antonio Sanchez Diaz\nJorge Antonio Aldana Carrillo"
+            android:text="Proyecto desarrollado por:\n\n Marco Antonio Sanchez Diaz\n218884909\nJorge Antonio Aldana Carrillo\n 218884976"
             android:textColor="#000000"
             android:textSize="25sp"
             android:textStyle="bold"

@@ -19,7 +19,7 @@ import com.example.digidex_20.modelo.Personaje
 import android.annotation.SuppressLint as SuppressLint1
 
 
-class information : Fragment() {
+class information : Fragment() { //se definen las variables
     private lateinit var miRecycler:RecyclerView
     private lateinit var listaPersonajes:ArrayList<Personaje>
     private lateinit var adaptador:PersonajeAdapter
@@ -48,8 +48,8 @@ class information : Fragment() {
                 for (indice in 0 until respuesta.length()){
                     val personajeIndJson = respuesta.getJSONObject(indice)
                     val personaje = Personaje(  personajeIndJson.getString("name"),
-                                                personajeIndJson.getString("img"),
-                                                personajeIndJson.getString("level"))
+                        personajeIndJson.getString("img"),
+                        personajeIndJson.getString("level"))
                     listaPersonajes.add(personaje)
                 }
 
@@ -67,7 +67,7 @@ class information : Fragment() {
         mediaPlayer.release()
     }
 
-    private fun reproduceMusica(){
+    private fun reproduceMusica(){ //se crea un objeto de media pleyer y se le asigna un audio
         mediaPlayer = MediaPlayer.create(requireContext(),R.raw.audio)
         mediaPlayer.isLooping = true
         mediaPlayer.setVolume(15.0f,15.0f)
